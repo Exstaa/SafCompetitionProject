@@ -38,7 +38,7 @@ public class RobotController {
 	@DeleteMapping("/delete/{id}")
 	public String deleteRobotData(@PathVariable Integer id) {
 		robotRepo.deleteById(id);
-		return "robot with id " + id + " is deleted";
+		return "data with id " + id + " is deleted";
 	}
 
 	@PutMapping("/update")
